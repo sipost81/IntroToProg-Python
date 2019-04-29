@@ -1,3 +1,3 @@
-Clean House, low
 Pay Bills, high
-Walk Dog,  medium
+Clean Car, High
+Take Trash Out, Medium

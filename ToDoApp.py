@@ -52,15 +52,9 @@ while(True):
     
     # Step 4 - Add a new item to the list/Table
     elif(strChoice.strip() == '2'):
-        new_item = input("Enter the new data in the following format 'task, priority': ")
-        
-        # Attempt to split the line on a comma, if it fails that means the user did not
-        #  enter the correct format so input is ignored
-        try:
-            new_task = new_item.split(",")
-            todo_list.append(new_task)
-        except:
-            print("The input was not correct")
+        new_task = input("Enter the new task name: ")
+        new_priority = input("Enter the priority of the task: ")
+        todo_list.append([new_task,new_priority])
     
     # Step 5 - Remove a new item to the list/Table
     elif(strChoice.strip() == '3'):
@@ -72,7 +66,7 @@ while(True):
     
     # Step 6 - Save tasks to the ToDo.txt file
     elif(strChoice.strip() == '4'):
-        
+        todo_file = open(filename, "w")
         # This loops through the master list of tasks and writes out the contents to a file. 
         #  The file is overwritten by the script since we are giving users the option to remove items
         for task in todo_list:
