@@ -1,16 +1,12 @@
 ###############################################################################
-# Title: HomeInventory.py
+# Title: ToDoApp.py
 # Owner: Tim Sipos
 # Date: 04/27/2019
-# Description: This script gather two inputs from the user and ask if they
-#  would like to enter any additional items. This loop will continue until they
-#  are ready to exit. The values are stored in a tuple in case the data
-#  is to be written out to a file. Once they are ready to exit they are asked
-#  if they want to write the entered data out to a file
+# Description: This script reads in a known file initially into a dictionary 
+#  and then into a master list. The user is presented with a basic menu that
+#  allows them to manipulate the data in the list. They are also given the
+#  option to save the master task list to a file as well as exit the script
 ###############################################################################
-
-# Imports
-import os
 
 # Variables
 todo_list = []
